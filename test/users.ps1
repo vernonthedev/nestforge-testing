@@ -1,19 +1,38 @@
 
 <#
---------------------------------------
-Users API request Testing
---------------------------------------
+                --------------------------------------
+                    Users API request Testing
+                --------------------------------------
 #>
 
 # CREATE USER
-$id = 4
-$uri = "http://localhost:3000/api/v1/users/$id"
-$body = @{
-    name="samuel"
-} | ConvertTo-Json
+# 
+# $create_user_uri = "http://localhost:3000/api/v1/users"
+# $create_user_body = @{
+#     name="samuel"
+# } | ConvertTo-Json
 
-# Invoke-RestMethod -Uri $uri -Method Post -ContentType "application/json" -Body $body
+# Invoke-RestMethod -Uri $create_user_uri -Method Post -ContentType "application/json" -Body $create_user_body
 
 # GET USERS
-Invoke-RestMethod -Uri $uri -Method Get
+$get_users_uri = "http://localhost:3000/api/v1/users"
+Invoke-RestMethod -Uri $get_users_uri -Method Get
 
+# GET USER
+$id = 4
+$get_user_uri = "http://localhost:3000/api/v1/users/$id"
+Invoke-RestMethod -Uri $get_user_uri -Method Get
+
+# UPDATE USER
+$user_id = 4
+$update_user_uri = "http://localhost:3000/api/v1/users/$user_id"
+$update_body = @{
+    name="John"
+} | ConvertTo-Json
+
+Invoke-RestMethod -Uri $update_user_uri -Method Put -ContentType "application/json" -Body $update_body
+
+# GET USER
+$id = 4
+$get_user_uri = "http://localhost:3000/api/v1/users/$id"
+Invoke-RestMethod -Uri $get_user_uri -Method Get
