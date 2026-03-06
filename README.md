@@ -16,7 +16,6 @@ Nestforge-Testing is a robust backend service built with **Rust**, utilizing the
 - **Health Checks**: Dedicated endpoint for monitoring service status.
 
 ## Project Structure
-[!New](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
 
 ```text
 src/
@@ -103,4 +102,5 @@ To run a test (example):
 
 ---
 
-Developed using Nestforge.
+Developed using Nestforge by ![Static Badge](https://img.shields.io/badge/vernonthedev-green)
+
