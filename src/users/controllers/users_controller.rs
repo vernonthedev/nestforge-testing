@@ -54,4 +54,13 @@ impl UsersController {
 
         Ok(Json(item))
     }
+
+    #[nestforge::delete("/{id}")]
+    async fn delete(
+        id: Param<u64>,
+        service: Inject<UsersService>
+    ) -> ApiResult<UserDto>{
+        let deleted_user = service.delete(id.value()).or_not_found_id("User", id.value())?;
+        Ok(Json(deleted_user))
+    }
 }
