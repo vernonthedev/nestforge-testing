@@ -9,7 +9,7 @@ pub struct UsersController;
 
 #[routes]
 impl UsersController {
-    #[nestforge::version("2")]
+    #[nestforge::version("1")]
     #[nestforge::get("/")]
     async fn list(
         service: Inject<UsersService>,
