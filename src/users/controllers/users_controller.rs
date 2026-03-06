@@ -9,6 +9,7 @@ pub struct UsersController;
 
 #[routes]
 impl UsersController {
+    #[nestforge::version("2")]
     #[nestforge::get("/")]
     async fn list(
         service: Inject<UsersService>,
@@ -16,6 +17,7 @@ impl UsersController {
         Ok(Json(service.all()))
     }
 
+    #[nestforge::version("2")]
     #[nestforge::get("/{id}")]
     async fn get_one(
         id: Param<u64>,
@@ -29,6 +31,7 @@ impl UsersController {
         Ok(Json(item))
     }
 
+    #[nestforge::version("2")]
     #[nestforge::post("/")]
     async fn create(
         service: Inject<UsersService>,
@@ -40,6 +43,7 @@ impl UsersController {
         Ok(Json(item))
     }
 
+    #[nestforge::version("2")]
     #[nestforge::put("/{id}")]
     async fn update(
         id: Param<u64>,
@@ -55,6 +59,7 @@ impl UsersController {
         Ok(Json(item))
     }
 
+    #[nestforge::version("2")]
     #[nestforge::delete("/{id}")]
     async fn delete(
         id: Param<u64>,

@@ -4,7 +4,7 @@
 --------------------------------------
 #>
 Write-Host "[+] Create A New User.." -ForegroundColor Cyan -BackgroundColor DarkGreen
-$create_user_uri = "http://localhost:3000/api/v1/users"
+$create_user_uri = "http://localhost:3000/api/v2/users"
 $create_user_body = @{
     name="vernonthedev"
 } | ConvertTo-Json

@@ -5,7 +5,7 @@
 #>
 Write-Host "[+] Updating A User.." -ForegroundColor Cyan -BackgroundColor DarkGreen
 $user_id = 4
-$update_user_uri = "http://localhost:3000/api/v1/users/$user_id"
+$update_user_uri = "http://localhost:3000/api/v2/users/$user_id"
 $update_body = @{
     name="mos demrand"
 } | ConvertTo-Json
