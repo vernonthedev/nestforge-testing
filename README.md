@@ -2,7 +2,7 @@
 
 [![Rust](https://img.shields.io/badge/rust-v1.75+-orange.svg)](https://www.rust-lang.org/)
 [![Axum](https://img.shields.io/badge/framework-Axum-blue.svg)](https://github.com/tokio-rs/axum)
-[![NestForge](https://img.shields.io/badge/core-NestForge-green.svg)](https://github.com/nestforge/nestforge)
+[![NestForge](https://img.shields.io/badge/core-NestForge-green.svg)](https://github.com/vernonthedev/nestforge)
 
 Nestforge-Testing is a robust backend service built with **Rust**, utilizing the **NestForge** framework to provide a modular, scalable architecture inspired by NestJS. It leverages **Axum** for high-performance routing and **Tokio** as the asynchronous runtime.
 
@@ -93,7 +93,7 @@ To run a test (example):
 
 ## Technologies Used
 
-- **Framework**: [NestForge](https://github.com/nestforge/nestforge) (NestJS-inspired architecture)
+- **Framework**: [NestForge](https://github.com/vernonthedev/nestforge) (NestJS-inspired architecture)
 - **Web Server**: [Axum](https://github.com/tokio-rs/axum)
 - **Runtime**: [Tokio](https://tokio.rs/)
 - **Serialization**: [Serde](https://serde.rs/)
