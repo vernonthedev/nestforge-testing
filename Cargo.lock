@@ -337,12 +337,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "nestforge-openapi"
+version = "1.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "304f03ee54bd4373819e5326401079cac03a5bcbc74fc0340167c7ea7f92a880"
+dependencies = [
+ "axum",
+ "nestforge-core",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "nestforge-testing"
 version = "0.1.0"
 dependencies = [
  "anyhow",
  "axum",
  "nestforge",
+ "nestforge-openapi",
  "serde",
  "tokio",
 ]

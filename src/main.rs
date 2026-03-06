@@ -7,7 +7,7 @@ mod interceptors;
 mod services;
 
 use app_module::AppModule;
-use nestforge::NestForgeFactory;
+use nestforge::{ NestForgeFactory };
 
 const PORT: u16 = 3000;
 
