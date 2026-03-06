@@ -102,5 +102,6 @@ To run a test (example):
 
 ---
 
-Developed using Nestforge by ![Static Badge](https://img.shields.io/badge/vernonthedev-green)
+Developed using Nestforge by </br>
+![Static Badge](https://img.shields.io/badge/vernonthedev-green)
 
