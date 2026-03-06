@@ -60,7 +60,8 @@ impl UsersController {
         id: Param<u64>,
         service: Inject<UsersService>
     ) -> ApiResult<UserDto>{
-        let deleted_user = service.delete(id.value()).or_not_found_id("User", id.value())?;
+        let id = id.value();
+        let deleted_user = service.delete(id).or_not_found_id("User", id)?;
         Ok(Json(deleted_user))
     }
 }
